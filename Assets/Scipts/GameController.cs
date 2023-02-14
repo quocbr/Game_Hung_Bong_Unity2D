@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
         {
             return;
         }
-        m_spawnTime -= Time.deltaTime;
+        m_spawnTime -= (Time.deltaTime+0.01f);
         if (m_gameOver)
         {
             m_ui.ShowGameOverPanel(true);
